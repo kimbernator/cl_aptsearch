@@ -13,8 +13,8 @@ cldbconn = db.CLDB()
 slack_key = ""
 slacker = notify.NOTIF(slack_key)
 # Prepare other variables
-url_base = 'http://kansascity.craigslist.org/search/apa'
-params = dict(search_distance=2, postal=64105, min_price=700, max_price=1250)
+url_base = 'http://<city>.craigslist.org/search/apa'
+params = dict(search_distance=2, postal=<zip>, min_price=700, max_price=1250)
 firstrun = True
 
 def reset():
